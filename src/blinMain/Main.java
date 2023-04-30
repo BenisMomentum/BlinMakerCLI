@@ -1,6 +1,7 @@
 package blinMain;
 
 import Blins.Blin;
+import Blins.Variations.Crepes;
 import Blins.Variations.StandardBlin;
 import Blins.Variations.StrawberryBlin;
 import Blins.Variations.Syrnik;
@@ -83,6 +84,13 @@ public class Main {
                     int cheese = Integer.parseInt(s[5]); //Strawberry
 
                     return new Syrnik(m2,e2,f2,cheese);
+
+                case "crepes":
+                    int m3 = Integer.parseInt(s[2]);
+                    int e3 = Integer.parseInt(s[3]);
+                    int f3 = Integer.parseInt(s[4]);
+
+                    return new Crepes(m3,e3,f3);
 
                 default:
                     return null;
